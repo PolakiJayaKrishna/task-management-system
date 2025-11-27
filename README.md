@@ -2,7 +2,7 @@
 
 A full-stack task management application built with Spring Boot and React. This project implements JWT authentication, role-based access control, and provides a clean interface for managing tasks.
 
-> **Assignment Project**: Backend Developer Intern Assignment
+> **Assignment Project**: Full Stack Task Management System (Frontend Intern Assignment)
 
 ## Features
 
@@ -243,6 +243,7 @@ This project was created for educational purposes as part of a backend developer
 ## � Author
 
 **Jaya Krishna** - polakijayakrishna@gmail.com
+[View Resume](https://drive.google.com/file/d/1mIDFhD4xEY1FXJVrgUhWra9Z1iwou2OB/view?usp=sharing)
 
 *Note: This project was developed with assistance from AI tools (ChatGPT/Gemini) for generating boilerplate code, documentation, and best practices.*
 
