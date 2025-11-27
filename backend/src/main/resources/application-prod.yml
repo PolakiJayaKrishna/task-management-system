@@ -1,0 +1,35 @@
+spring:
+  # MySQL Database Configuration (Production)
+  datasource:
+    url: jdbc:mysql://localhost:3306/taskmanagement_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: yourpassword  # Change this to your MySQL password
+  
+  # JPA/Hibernate Configuration for MySQL
+  jpa:
+    hibernate:
+      ddl-auto: update  # Use 'validate' in production
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+  
+  # H2 Console disabled in production
+  h2:
+    console:
+      enabled: false
+
+# JWT Configuration (Use environment variables in production)
+jwt:
+  secret: ${JWT_SECRET:ThisIsAVerySecureSecretKeyForJWTTokenGenerationPleaseChangeInProduction}
+  expiration: ${JWT_EXPIRATION:86400000}
+  refresh-expiration: ${JWT_REFRESH_EXPIRATION:604800000}
+
+# Logging Configuration
+logging:
+  level:
+    com.example.taskmanagement: INFO
+    org.springframework.security: WARN
+    org.hibernate.SQL: WARN
